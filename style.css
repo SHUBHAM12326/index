@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+header {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 0;
+  text-align: center;
+  animation: slideInFromTop 1s ease-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+main {
+  padding: 1rem 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #bdc3c7;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+h3 {
+  color: #7f8c8d;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+section {
+  background: #ffffff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  animation: zoomIn 1s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.1) rotate(0deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+u {
+  color: #3498db;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+footer p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
